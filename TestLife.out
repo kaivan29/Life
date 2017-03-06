@@ -1,0 +1,262 @@
+g++-4.8 -pedantic -std=c++11 -fprofile-arcs -ftest-coverage Life.cpp RunLife.cpp -o RunLife
+./RunLife < RunLife.in > RunLife.tmp
+diff RunLife.tmp RunLife.out
+g++-4.8 -pedantic -std=c++11 -fprofile-arcs -ftest-coverage Life.cpp TestLife.cpp -o TestLife -lgtest -lgtest_main -pthread
+valgrind ./TestLife                                       >  TestLife.tmp 2>&1
+gcov-4.8 -b Life.cpp     | grep -A 5 "File 'Life.cpp'"     >> TestLife.tmp
+gcov-4.8 -b TestLife.cpp | grep -A 5 "File 'TestLife.cpp'" >> TestLife.tmp
+cat TestLife.tmp
+==30448== Memcheck, a memory error detector
+==30448== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==30448== Using Valgrind-3.10.0.SVN and LibVEX; rerun with -h for copyright info
+==30448== Command: ./TestLife
+==30448== 
+Running main() from gtest_main.cc
+[==========] Running 102 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 38 tests from ConwayCell
+[ RUN      ] ConwayCell.cc_1
+[       OK ] ConwayCell.cc_1 (11 ms)
+[ RUN      ] ConwayCell.cc_2
+[       OK ] ConwayCell.cc_2 (2 ms)
+[ RUN      ] ConwayCell.cc_3
+[       OK ] ConwayCell.cc_3 (2 ms)
+[ RUN      ] ConwayCell.cc_4
+[       OK ] ConwayCell.cc_4 (2 ms)
+[ RUN      ] ConwayCell.cc_5
+[       OK ] ConwayCell.cc_5 (1 ms)
+[ RUN      ] ConwayCell.cc_6
+[       OK ] ConwayCell.cc_6 (1 ms)
+[ RUN      ] ConwayCell.cc_7
+[       OK ] ConwayCell.cc_7 (3 ms)
+[ RUN      ] ConwayCell.cc_8
+[       OK ] ConwayCell.cc_8 (2 ms)
+[ RUN      ] ConwayCell.cc_9
+[       OK ] ConwayCell.cc_9 (2 ms)
+[ RUN      ] ConwayCell.cc_10
+[       OK ] ConwayCell.cc_10 (2 ms)
+[ RUN      ] ConwayCell.cc_11
+[       OK ] ConwayCell.cc_11 (2 ms)
+[ RUN      ] ConwayCell.cc_12
+[       OK ] ConwayCell.cc_12 (2 ms)
+[ RUN      ] ConwayCell.cc_13
+[       OK ] ConwayCell.cc_13 (2 ms)
+[ RUN      ] ConwayCell.cc_14
+[       OK ] ConwayCell.cc_14 (1 ms)
+[ RUN      ] ConwayCell.cc_15
+[       OK ] ConwayCell.cc_15 (2 ms)
+[ RUN      ] ConwayCell.cc_16
+[       OK ] ConwayCell.cc_16 (2 ms)
+[ RUN      ] ConwayCell.cc_17
+[       OK ] ConwayCell.cc_17 (2 ms)
+[ RUN      ] ConwayCell.cc_18
+[       OK ] ConwayCell.cc_18 (2 ms)
+[ RUN      ] ConwayCell.cc_19
+[       OK ] ConwayCell.cc_19 (2 ms)
+[ RUN      ] ConwayCell.cc_20
+[       OK ] ConwayCell.cc_20 (2 ms)
+[ RUN      ] ConwayCell.cc_21
+[       OK ] ConwayCell.cc_21 (2 ms)
+[ RUN      ] ConwayCell.cc_22
+[       OK ] ConwayCell.cc_22 (2 ms)
+[ RUN      ] ConwayCell.cc_23
+[       OK ] ConwayCell.cc_23 (2 ms)
+[ RUN      ] ConwayCell.cc_24
+[       OK ] ConwayCell.cc_24 (2 ms)
+[ RUN      ] ConwayCell.cc_25
+[       OK ] ConwayCell.cc_25 (1 ms)
+[ RUN      ] ConwayCell.cc_26
+[       OK ] ConwayCell.cc_26 (2 ms)
+[ RUN      ] ConwayCell.cc_27
+[       OK ] ConwayCell.cc_27 (2 ms)
+[ RUN      ] ConwayCell.cc_28
+[       OK ] ConwayCell.cc_28 (3 ms)
+[ RUN      ] ConwayCell.cc_29
+[       OK ] ConwayCell.cc_29 (2 ms)
+[ RUN      ] ConwayCell.cc_30
+[       OK ] ConwayCell.cc_30 (2 ms)
+[ RUN      ] ConwayCell.cc_31
+[       OK ] ConwayCell.cc_31 (2 ms)
+[ RUN      ] ConwayCell.cc_32
+[       OK ] ConwayCell.cc_32 (2 ms)
+[ RUN      ] ConwayCell.cc_33
+[       OK ] ConwayCell.cc_33 (3 ms)
+[ RUN      ] ConwayCell.cc_34
+[       OK ] ConwayCell.cc_34 (2 ms)
+[ RUN      ] ConwayCell.cc_35
+[       OK ] ConwayCell.cc_35 (2 ms)
+[ RUN      ] ConwayCell.cc_36
+[       OK ] ConwayCell.cc_36 (2 ms)
+[ RUN      ] ConwayCell.cc_37
+[       OK ] ConwayCell.cc_37 (2 ms)
+[ RUN      ] ConwayCell.upd_exc
+[       OK ] ConwayCell.upd_exc (30 ms)
+[----------] 38 tests from ConwayCell (133 ms total)
+
+[----------] 39 tests from FredkinCell
+[ RUN      ] FredkinCell.fc_1
+[       OK ] FredkinCell.fc_1 (3 ms)
+[ RUN      ] FredkinCell.fc_2
+[       OK ] FredkinCell.fc_2 (1 ms)
+[ RUN      ] FredkinCell.fc_3
+[       OK ] FredkinCell.fc_3 (1 ms)
+[ RUN      ] FredkinCell.fc_4
+[       OK ] FredkinCell.fc_4 (2 ms)
+[ RUN      ] FredkinCell.fc_5
+[       OK ] FredkinCell.fc_5 (2 ms)
+[ RUN      ] FredkinCell.fc_6
+[       OK ] FredkinCell.fc_6 (1 ms)
+[ RUN      ] FredkinCell.fc_7
+[       OK ] FredkinCell.fc_7 (2 ms)
+[ RUN      ] FredkinCell.fc_8
+[       OK ] FredkinCell.fc_8 (3 ms)
+[ RUN      ] FredkinCell.fc_9
+[       OK ] FredkinCell.fc_9 (2 ms)
+[ RUN      ] FredkinCell.fc_10
+[       OK ] FredkinCell.fc_10 (2 ms)
+[ RUN      ] FredkinCell.fc_11
+[       OK ] FredkinCell.fc_11 (2 ms)
+[ RUN      ] FredkinCell.fc_12
+[       OK ] FredkinCell.fc_12 (2 ms)
+[ RUN      ] FredkinCell.fc_13
+[       OK ] FredkinCell.fc_13 (2 ms)
+[ RUN      ] FredkinCell.fc_14
+[       OK ] FredkinCell.fc_14 (2 ms)
+[ RUN      ] FredkinCell.fc_15
+[       OK ] FredkinCell.fc_15 (2 ms)
+[ RUN      ] FredkinCell.fc_16
+[       OK ] FredkinCell.fc_16 (3 ms)
+[ RUN      ] FredkinCell.fc_17
+[       OK ] FredkinCell.fc_17 (2 ms)
+[ RUN      ] FredkinCell.fc_18
+[       OK ] FredkinCell.fc_18 (2 ms)
+[ RUN      ] FredkinCell.fc_19
+[       OK ] FredkinCell.fc_19 (2 ms)
+[ RUN      ] FredkinCell.fc_20
+[       OK ] FredkinCell.fc_20 (2 ms)
+[ RUN      ] FredkinCell.fc_21
+[       OK ] FredkinCell.fc_21 (3 ms)
+[ RUN      ] FredkinCell.fc_22
+[       OK ] FredkinCell.fc_22 (2 ms)
+[ RUN      ] FredkinCell.fc_23
+[       OK ] FredkinCell.fc_23 (2 ms)
+[ RUN      ] FredkinCell.fc_24
+[       OK ] FredkinCell.fc_24 (2 ms)
+[ RUN      ] FredkinCell.fc_25
+[       OK ] FredkinCell.fc_25 (2 ms)
+[ RUN      ] FredkinCell.fc_26
+[       OK ] FredkinCell.fc_26 (2 ms)
+[ RUN      ] FredkinCell.fc_27
+[       OK ] FredkinCell.fc_27 (3 ms)
+[ RUN      ] FredkinCell.fc_28
+[       OK ] FredkinCell.fc_28 (1 ms)
+[ RUN      ] FredkinCell.fc_29
+[       OK ] FredkinCell.fc_29 (1 ms)
+[ RUN      ] FredkinCell.fc_30
+[       OK ] FredkinCell.fc_30 (1 ms)
+[ RUN      ] FredkinCell.fc_31
+[       OK ] FredkinCell.fc_31 (2 ms)
+[ RUN      ] FredkinCell.fc_32
+[       OK ] FredkinCell.fc_32 (2 ms)
+[ RUN      ] FredkinCell.fc_33
+[       OK ] FredkinCell.fc_33 (2 ms)
+[ RUN      ] FredkinCell.fc_34
+[       OK ] FredkinCell.fc_34 (2 ms)
+[ RUN      ] FredkinCell.fc_35
+[       OK ] FredkinCell.fc_35 (2 ms)
+[ RUN      ] FredkinCell.fc_36
+[       OK ] FredkinCell.fc_36 (2 ms)
+[ RUN      ] FredkinCell.fc_37
+[       OK ] FredkinCell.fc_37 (1 ms)
+[ RUN      ] FredkinCell.fc_38
+[       OK ] FredkinCell.fc_38 (1 ms)
+[ RUN      ] FredkinCell.upd_exc
+[       OK ] FredkinCell.upd_exc (2 ms)
+[----------] 39 tests from FredkinCell (87 ms total)
+
+[----------] 6 tests from Cell
+[ RUN      ] Cell.c_1
+[       OK ] Cell.c_1 (3 ms)
+[ RUN      ] Cell.c_2
+[       OK ] Cell.c_2 (2 ms)
+[ RUN      ] Cell.c_3
+[       OK ] Cell.c_3 (2 ms)
+[ RUN      ] Cell.c_4
+[       OK ] Cell.c_4 (3 ms)
+[ RUN      ] Cell.c_5
+[       OK ] Cell.c_5 (2 ms)
+[ RUN      ] Cell.c_6
+[       OK ] Cell.c_6 (3 ms)
+[----------] 6 tests from Cell (16 ms total)
+
+[----------] 19 tests from LIFE
+[ RUN      ] LIFE.l_1
+[       OK ] LIFE.l_1 (53 ms)
+[ RUN      ] LIFE.l_2
+[       OK ] LIFE.l_2 (3 ms)
+[ RUN      ] LIFE.l_3
+[       OK ] LIFE.l_3 (26 ms)
+[ RUN      ] LIFE.l_5
+[       OK ] LIFE.l_5 (26 ms)
+[ RUN      ] LIFE.l_6
+[       OK ] LIFE.l_6 (82 ms)
+[ RUN      ] LIFE.l_7
+[       OK ] LIFE.l_7 (4 ms)
+[ RUN      ] LIFE.l_8
+[       OK ] LIFE.l_8 (4 ms)
+[ RUN      ] LIFE.l_9
+[       OK ] LIFE.l_9 (6 ms)
+[ RUN      ] LIFE.l_10
+[       OK ] LIFE.l_10 (4 ms)
+[ RUN      ] LIFE.l_12
+[       OK ] LIFE.l_12 (3 ms)
+[ RUN      ] LIFE.l_13
+[       OK ] LIFE.l_13 (3 ms)
+[ RUN      ] LIFE.l_14
+[       OK ] LIFE.l_14 (4 ms)
+[ RUN      ] LIFE.l_15
+[       OK ] LIFE.l_15 (3 ms)
+[ RUN      ] LIFE.l_16
+[       OK ] LIFE.l_16 (4 ms)
+[ RUN      ] LIFE.l_17
+[       OK ] LIFE.l_17 (10 ms)
+[ RUN      ] LIFE.iterable
+[       OK ] LIFE.iterable (10 ms)
+[ RUN      ] LIFE.indexable
+[       OK ] LIFE.indexable (11 ms)
+[ RUN      ] LIFE.fredkin
+[       OK ] LIFE.fredkin (18 ms)
+[ RUN      ] LIFE.go_exc
+[       OK ] LIFE.go_exc (5 ms)
+[----------] 19 tests from LIFE (286 ms total)
+
+[----------] Global test environment tear-down
+[==========] 102 tests from 4 test cases ran. (558 ms total)
+[  PASSED  ] 102 tests.
+==30448== 
+==30448== HEAP SUMMARY:
+==30448==     in use at exit: 29,088 bytes in 1,818 blocks
+==30448==   total heap usage: 8,438 allocs, 6,620 frees, 477,449 bytes allocated
+==30448== 
+==30448== LEAK SUMMARY:
+==30448==    definitely lost: 29,088 bytes in 1,818 blocks
+==30448==    indirectly lost: 0 bytes in 0 blocks
+==30448==      possibly lost: 0 bytes in 0 blocks
+==30448==    still reachable: 0 bytes in 0 blocks
+==30448==         suppressed: 0 bytes in 0 blocks
+==30448== Rerun with --leak-check=full to see details of leaked memory
+==30448== 
+==30448== For counts of detected and suppressed errors, rerun with: -v
+==30448== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+File 'Life.cpp'
+Lines executed:92.44% of 172
+Branches executed:95.82% of 239
+Taken at least once:66.53% of 239
+Calls executed:75.84% of 178
+Creating 'Life.cpp.gcov'
+File 'TestLife.cpp'
+Lines executed:98.00% of 449
+Branches executed:67.18% of 2846
+Taken at least once:33.66% of 2846
+Calls executed:56.30% of 3341
+Creating 'TestLife.cpp.gcov'

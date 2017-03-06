@@ -1,0 +1,16 @@
+Debug/
+*.vcxproj
+.filters
+*.filters
+targetver.h
+*.sdf
+*.sln
+*.opensdf
+*life-with-git/
+*.user
+*.gcda
+*.gcov
+*.gcno
+*.tmp
+RunLife
+TestLife

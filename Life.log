@@ -1,0 +1,216 @@
+commit e738c6092ec2df30ef8544eb9acf51dd622ce957
+Author: spencer-shadley <spencershadley@utexas.edu>
+Date:   Thu Nov 19 21:58:26 2015 -0600
+
+    final commit
+
+commit b34645e1fede3017ce0ecc18f595b8259671e386
+Author: Kaivan Shah <kaivan29@tamu.edu>
+Date:   Thu Nov 19 21:54:36 2015 -0600
+
+    final
+
+commit 084c4b25ad7c8c605376fa7633f0189bda04acd2
+Author: Kaivan Shah <kaivan29@tamu.edu>
+Date:   Thu Nov 19 21:41:23 2015 -0600
+
+    html
+
+commit b7a8920618b2049a3c4958dff0cd0d32b4b5073d
+Author: Kaivan Shah <kaivan29@tamu.edu>
+Date:   Thu Nov 19 21:33:01 2015 -0600
+
+    final
+
+commit 6d3dae13b216b7670c42ea9dc0fbe9e73b76c076
+Author: spencer-shadley <spencershadley@utexas.edu>
+Date:   Thu Nov 19 21:31:13 2015 -0600
+
+    Fixed fredkin
+
+commit 448b4a9a97c8298c50a84fe6f8bfbf6fb1656e00
+Author: spencer-shadley <spencershadley@utexas.edu>
+Date:   Thu Nov 19 21:14:30 2015 -0600
+
+    Fixed print and templates
+
+commit d2ceabc9d5be9a07cef6aa98ce3b33ff4ac6542d
+Author: Kaivan Shah <kaivan29@tamu.edu>
+Date:   Thu Nov 19 21:12:54 2015 -0600
+
+    Unit tests work
+
+commit ab10f322a7b039b1ffd396e1eb0c6bbd0a60add7
+Author: Kaivan Shah <kaivan29@tamu.edu>
+Date:   Thu Nov 19 20:49:48 2015 -0600
+
+    TestLife
+
+commit 2da9c7feb64e4853161628c751a33fa6f310a930
+Author: spencer-shadley <spencershadley@utexas.edu>
+Date:   Thu Nov 19 20:47:02 2015 -0600
+
+    changed makefile
+
+commit da6290af42a16ead3b21050c320cc7e4ee80ee53
+Author: spencer-shadley <spencershadley@utexas.edu>
+Date:   Thu Nov 19 20:27:49 2015 -0600
+
+    IT WORKS HOLY SHIT
+
+commit 032d68d47c213478dcf0b8a54b11f2fe24d7d18b
+Author: U-Spencer-MSI\Spencer <spencershadley@utexas.edu>
+Date:   Thu Nov 19 14:49:15 2015 -0600
+
+    created at()
+
+commit 9a735a7a9854e6ce5385e1c6cceff6cbdd55716e
+Author: U-Spencer-MSI\Spencer <spencershadley@utexas.edu>
+Date:   Thu Nov 19 14:04:40 2015 -0600
+
+    added UML diagram
+
+commit 78aab42e345f8e9a5650f13115dfe1d880788ea5
+Author: U-Spencer-MSI\Spencer <spencershadley@utexas.edu>
+Date:   Thu Nov 19 13:32:27 2015 -0600
+
+    moved many members to be private
+
+commit 787df16bab4e8cfe302969a3659f376aaf2375ab
+Author: U-Spencer-MSI\Spencer <spencershadley@utexas.edu>
+Date:   Thu Nov 19 13:10:34 2015 -0600
+
+    made Life iterable (I think)
+
+commit 2732cc1e2a4340f685826253cb7c57ffaac8a89e
+Author: U-Spencer-MSI\Spencer <spencershadley@utexas.edu>
+Date:   Thu Nov 19 12:17:26 2015 -0600
+
+    more cleanup
+
+commit 11471e5faffbad41761d8a513b11b7eb611925eb
+Author: U-Spencer-MSI\Spencer <spencershadley@utexas.edu>
+Date:   Thu Nov 19 12:11:34 2015 -0600
+
+    more code cleanup, more removing unnecessary code snippets
+
+commit 8f68043ee4e37bddfee394c64f91ddc6df1bcd78
+Author: U-Spencer-MSI\Spencer <spencershadley@utexas.edu>
+Date:   Thu Nov 19 11:57:12 2015 -0600
+
+    switched from print method to << operator; cleaned up code; removed more unnecessary things; removed print statements
+
+commit d8289760741e6100dd54533cdb823bbcce889919
+Author: U-Spencer-MSI\Spencer <spencershadley@utexas.edu>
+Date:   Thu Nov 19 00:25:25 2015 -0600
+
+    more code cleanup, removed unnecessary methods/functions/operators, fixed TODOs, added some comments
+
+commit 194bee6e414468fb19475d9dabce092be521f9fc
+Author: U-Spencer-MSI\Spencer <spencershadley@utexas.edu>
+Date:   Wed Nov 18 23:36:33 2015 -0600
+
+    cleaned up Life.cpp, added exception handling, combined some logic in a few places
+
+commit b87d53b223da4b81e103524bd08dd1c45999567e
+Author: U-Spencer-MSI\Spencer <spencershadley@utexas.edu>
+Date:   Wed Nov 18 22:58:05 2015 -0600
+
+    matched downings output
+
+commit f9ea19448bc16c44f410d66b908cbb1cded471e9
+Author: U-Spencer-MSI\Spencer <spencershadley@utexas.edu>
+Date:   Wed Nov 18 22:27:31 2015 -0600
+
+    we got it all working!
+
+commit 32f45858178656109768d1f2908f71c0166ab8a7
+Author: Kaivan Shah <kaivan29@tamu.edu>
+Date:   Wed Nov 18 17:56:15 2015 -0600
+
+    makefile
+
+commit 562c58348f9255fe2c87a98474ec42cb7121f0d1
+Author: Kaivan Shah <kaivan29@tamu.edu>
+Date:   Wed Nov 18 17:52:57 2015 -0600
+
+    makefile and travis
+
+commit a562ffbfd4ba2473126b541035f8406a73aa0663
+Author: Spencer <spencershadley@utexas.edu>
+Date:   Wed Nov 18 15:44:56 2015 -0600
+
+    inplemented taketurn and update
+
+commit 3e63dca9303c1dadb485f34198de90e87d80bdaf
+Author: U-Spencer-MSI\Spencer <spencershadley@utexas.edu>
+Date:   Wed Nov 18 01:14:37 2015 -0600
+
+    implemented evolve, but fredkin cell conversion to conway cell does not work as expected
+
+commit fcecb7534e3b3fa7baf83b1dfb6da68d15d8baa6
+Author: Spencer <spencershadley@utexas.edu>
+Date:   Tue Nov 17 19:29:59 2015 -0600
+
+    started changing design to reflect better ideals, started evolve
+
+commit 8a9863909d901c853856b3b1d52a003a43975f8f
+Author: Spencer <spencershadley@utexas.edu>
+Date:   Tue Nov 17 17:13:07 2015 -0600
+
+    parsing multiple grids, made AbstractCell purely virtual
+
+commit f8b01985aa028b394ca79303217b3ebafa80c45d
+Author: U-Spencer-MSI\Spencer <spencershadley@utexas.edu>
+Date:   Sun Nov 15 01:42:58 2015 -0600
+
+    finished adjacent cells alive
+
+commit c9421102999225afd3f1d7d7d0305ac0e1da48ed
+Author: U-Spencer-MSI\Spencer <spencershadley@utexas.edu>
+Date:   Sat Nov 14 23:36:59 2015 -0600
+
+    fixed board creation
+
+commit c5fe9c97f9b7049af421bde72e94df7dbe62a583
+Author: U-Spencer-MSI\Spencer <spencershadley@utexas.edu>
+Date:   Sat Nov 14 01:56:47 2015 -0600
+
+    added necessary operator overwriting in Life.h for Cell/AbstractCell and more input parsing
+
+commit b21488fecd41176c4bd198dfc6ef19532e611888
+Merge: 802576b 5a169d2
+Author: U-Spencer-MSI\Spencer <spencershadley@utexas.edu>
+Date:   Fri Nov 13 00:37:18 2015 -0600
+
+    fixed merge conflicts
+
+commit 802576bf4664ab06f6a134084fa90952c19599c1
+Author: U-Spencer-MSI\Spencer <spencershadley@utexas.edu>
+Date:   Fri Nov 13 00:23:08 2015 -0600
+
+    implemented Life.h, started parsing input
+
+commit 5a169d22a6c6d0a897b8e96ec81ad8d971690019
+Author: spencer-shadley <spencershadley@utexas.edu>
+Date:   Thu Nov 12 22:20:18 2015 -0600
+
+    created templates
+
+commit e1547878c6380c354cabca47c0715a48e46bef90
+Author: spencer-shadley <spencershadley@utexas.edu>
+Date:   Thu Nov 12 18:21:44 2015 -0600
+
+    added c++ files
+
+commit 5c4b1e26e64b1922f15d744b6f5b832290b8d129
+Author: spencer-shadley <spencershadley@utexas.edu>
+Date:   Thu Nov 12 17:43:17 2015 -0600
+
+    testing vs push
+
+commit 863d55f1e5d04845509d4407c818b611064ff748
+Author: Spencer Shadley <spencershadley@utexas.edu>
+Date:   Thu Nov 12 17:37:37 2015 -0600
+
+    Create README.md
