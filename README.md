@@ -14,7 +14,5 @@ Once the grid is manually populated with live and/or dead cells, the grid repres
 4. automated documentation with doxygen
 5. integration with Travis CI
 
-![LIFE](/fredkincell1.PNG "Step 2")
 ![LIFE](/conwaycell1.png "Step 3")
-![LIFE](/conwaycell2.png "Step 4")
 ![LIFE](/gameoflife.png "Step 5")
